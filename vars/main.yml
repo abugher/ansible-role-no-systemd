@@ -5,7 +5,7 @@ install_packages:
 copy_remote_files:
   - src:                '/usr/share/sysvinit/inittab'
     dest:               '/etc/inittab'
-purge_packages:
+apt_purge_packages:
   - 'systemd'
 install_files:
   - owner:              'root'

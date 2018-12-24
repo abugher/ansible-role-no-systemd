@@ -3,5 +3,5 @@
 - include:              '../tasks/copy_remote_files.yml'
 - include:              '../tasks/reboot.yml'
   when:                 install_packages_result.changed or copy_remote_files_result.changed
-- include:              '../tasks/purge_packages.yml'
+- include:              '../tasks/apt_purge_packages.yml'
 - include:              '../tasks/install_files.yml'
