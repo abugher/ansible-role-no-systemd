@@ -1,3 +1,7 @@
+Package: systemd
+Pin: release *
+Pin-Priority: -1
+
 Package: systemd:amd64
 Pin: release *
 Pin-Priority: -1
