@@ -5,6 +5,8 @@ install_packages:
 copy_remote_files:
   - src:                '/usr/share/sysvinit/inittab'
     dest:               '/etc/inittab'
+enable_services:
+  - 'ssh'               # ssh can get disabled in the transition.
 apt_purge_packages:
   - 'systemd'
 install_files:
