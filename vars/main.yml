@@ -2,6 +2,9 @@
 install_packages:
   - 'sysvinit-core'
   - 'sysvinit-utils'
+  # https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=1040458
+  # rsyslog stopped shipping their own init script for System V.
+  - 'orphan-sysvinit-scripts'
 copy_remote_files:
   - src:                '/usr/share/sysvinit/inittab'
     dest:               '/etc/inittab'
